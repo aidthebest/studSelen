@@ -36,17 +36,19 @@ public class CardTest {
 
     @Test
     void shouldBeSuccess() {
-//        driver.get("http://localhost:9999");
-//        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Тарас Игнатьевич");
-//        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79264775516");
-//        driver.findElement(By.className("checkbox__box")).click();
-//        driver.findElement(By.className("button")).click();
-//        String actualText = driver.findElement(By.cssSelector("[data-test-id=order-success")).getText();
-//        String expectedText = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
-//        assertEquals(expectedText.trim(), actualText.trim());
-
-
+        driver.get("http://localhost:9999");
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Тарас Игнатьевич");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79264775516");
         driver.findElement(By.className("checkbox__box")).click();
+        driver.findElement(By.className("button")).click();
+        String actualText = driver.findElement(By.cssSelector("[data-test-id=order-success")).getText();
+        String expectedText = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
+        assertEquals(expectedText.trim(), actualText.trim());
+
+
+
+
+//        driver.findElement(By.className("checkbox__box")).click();
 
     }
 

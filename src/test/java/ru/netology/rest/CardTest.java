@@ -34,9 +34,9 @@ public class CardTest {
         driver.get("http://localhost:9999");
     }
 
-//    @Test
-//    void shouldBeSuccess() {
-////        driver.get("http://localhost:9999");
+    @Test
+    void shouldBeSuccess() {
+//        driver.get("http://localhost:9999");
 //        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Тарас Игнатьевич");
 //        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79264775516");
 //        driver.findElement(By.className("checkbox__box")).click();
@@ -44,7 +44,11 @@ public class CardTest {
 //        String actualText = driver.findElement(By.cssSelector("[data-test-id=order-success")).getText();
 //        String expectedText = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
 //        assertEquals(expectedText.trim(), actualText.trim());
-//    }
+
+
+        driver.findElement(By.className("checkbox__box")).click();
+
+    }
 
     @AfterEach
     void tearDown() {
